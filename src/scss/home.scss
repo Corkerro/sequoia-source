@@ -1,0 +1,253 @@
+//====================================================================================================
+.home {
+    position: relative;
+    margin-top: rem(20);
+    padding-top: 152px;
+    // .home__container
+
+    &__container {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & p{
+        font-family: Stone Soup NF W01 Regular;
+        font-weight: 400;
+        font-size: rem(32);
+        line-height: rem(39);
+        text-align: center;
+        letter-spacing: 0.05em;
+        
+        color: #C2E978;
+    }
+    & h3{
+        margin-top: rem(16);
+        font-weight: 400;
+        @include adaptiveValue("font-size", 28, 16);
+        line-height: rem(38);
+        /* or 146% */
+        width: rem(800);
+        text-align: center;
+        @media (max-width: em(920)){
+            width: 100%;
+        }
+    }
+    & h2{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            background: url('../img/Line-1.svg');
+            width: 120px;
+            height: 16px;
+            left: calc(50% - 60px);
+            top: -44px;
+        }
+        margin-top: rem(84);
+        margin-bottom: rem(12);
+        & span{
+            color: #c2e978;
+        }
+        font-family: Stone Soup NF W01 Regular;
+        font-weight: 400;
+        font-size: rem(48);
+        line-height: rem(46);
+        /* identical to box height, or 96% */
+        
+        text-align: center;
+        letter-spacing: 0.05em;
+        
+        color: #FFFFFF;
+    }
+    & h4{
+        width: rem(606);
+        @media (max-width: em(920)){
+            width: 100%;
+        }
+        @include adaptiveValue("font-size", 20, 16);
+        line-height: rem(32);
+        /* or 160% */
+        
+        text-align: center;
+        font-feature-settings: 'zero' on, 'liga' off;
+        
+        color: #FFFFFF;
+    }
+    & h1{
+        margin: rem(8) 0;
+        font-family: Stone Soup NF W01 Regular;
+        color: #fff;
+        font-size: rem(115);
+        position: relative;
+        text-align: center;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 53.97px;
+            height: 70.77px;
+            left:percent(165,555);
+            top: -5px;
+            content: url('../img/home/tree.svg');
+            @media (max-width: em(584)){
+                @include adaptiveValue("left", 245, 165, 585, 423);
+            }
+            @media (max-width: em(424)){
+                @include adaptiveValue("right", 117, 65, 424, 320);
+            }
+        }
+        
+    }
+    margin-bottom: rem(100);
+}
+
+.home__bg{
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    left: calc(50% - 684px);
+    width: 1368px;
+    height: 860px;
+    overflow: hidden;
+    &-bgimg{
+        position: absolute;
+        top: -280px;
+        width: 1600px;
+        left: calc(50% - 800px);
+        animation: main-anim-1 30s ease infinite;
+        -webkit-animation: main-anim-1 30s ease infinite;
+        @media(max-width: em(825))        {
+            width: 100%;
+        }
+    }
+    &-bgimg2{
+        position: absolute;
+        width: 1600px;
+        position: none;
+        left: calc(50% - 800px);
+        animation: main-anim-2 30s ease infinite;
+        @media (max-width: em(825)){
+            width: 100%;
+        }
+    }
+    &-sheet1{
+        position: absolute;
+        top: percent(141, 860);
+        left: percent(589,1420);
+    }
+    &-sheet2{
+        position: absolute;
+        top: percent(200, 860);
+        right: percent(345,1368);
+    }
+    &-sheet3{
+        position: absolute;
+        top: percent(265, 860);
+        left: percent(365,1450);
+    }
+    &-sheet4{
+        position: absolute;
+        top: percent(467, 860);
+        right: percent(348,1450);
+    }
+    &-sheet5{
+        position: absolute;
+        top: percent(508, 860);
+        left: percent(371,1450);
+    }
+    &-sheet6{
+        position: absolute;
+        top: percent(535, 860);
+        left: percent(112,1450);
+    }
+    &-zatemnenie1{
+        z-index: 3;
+        background: linear-gradient(180deg, #000000 18.83%, rgba(0, 0, 0, 0) 100%);
+        transform: matrix(0, 1, 1, 0, 0, 0);
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        left: percent(-625,1368);
+        bottom: 0;
+    }
+    &-zatemnenie2{
+        z-index: 3;
+        background: linear-gradient(0deg, #000000 18.83%, rgba(0, 0, 0, 0) 100%);
+        // transform: matrix(1, 0, 0, -1, 0, 0);
+        width: 100%;
+        height: 208px;
+        position: absolute;
+        bottom: 0;
+    }
+    &-zatemnenie3{
+        z-index: 3;
+        background: linear-gradient(180deg, #000000 18.83%, rgba(0, 0, 0, 0) 100%);
+        transform: matrix(0, -1, -1, 0, 0, 0);
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        right: percent(-625,1368);
+        bottom: 0;
+        -webkit-transform: matrix(0, -1, -1, 0, 0, 0);
+        -moz-transform: matrix(0, -1, -1, 0, 0, 0);
+        -ms-transform: matrix(0, -1, -1, 0, 0, 0);
+        -o-transform: matrix(0, -1, -1, 0, 0, 0);
+}
+}
+
+@keyframes main-anim-1 {
+    0%{
+        transform: scale(.9);
+        opacity: 1;
+        -webkit-transform: scale(.9);
+        -moz-transform: scale(.9);
+        -ms-transform: scale(.9);
+        -o-transform: scale(.9);
+}
+    50%{
+        transform: scale(1.2);
+        opacity: 0;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+}
+    100%{
+        transform: scale(.9);
+        opacity: 1;
+        -webkit-transform: scale(.9);
+        -moz-transform: scale(.9);
+        -ms-transform: scale(.9);
+        -o-transform: scale(.9);
+}
+}
+@keyframes main-anim-2 {
+    0%{
+        transform: scale(.9);
+        opacity: 0;
+        -webkit-transform: scale(.9);
+        -moz-transform: scale(.9);
+        -ms-transform: scale(.9);
+        -o-transform: scale(.9);
+}
+    50%{
+        transform: scale(1.2);
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+}
+    100%{
+        transform: scale(.9);
+        opacity: 0;
+        -webkit-transform: scale(.9);
+        -moz-transform: scale(.9);
+        -ms-transform: scale(.9);
+        -o-transform: scale(.9);
+}
+}
+
+//====================================================================================================

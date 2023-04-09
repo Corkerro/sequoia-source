@@ -1,0 +1,98 @@
+.tokenomics {
+    margin-top: rem(80);
+    // .tokenomics__container
+
+    &__container {
+        display: flex;
+        gap: rem(50);
+        @include adaptiveValue("padding-right", 64, 16);
+        @include adaptiveValue("padding-left", 64, 16);
+        @include adaptiveValue("padding-top", 64, 32);
+        @include adaptiveValue("padding-bottom", 64, 32);
+        background: linear-gradient(180deg, #131624 0%, #191D2E 100%);
+        flex-wrap: wrap;
+        @media (max-width: em(1125)){
+            flex-direction: column;
+            justify-content: center;
+            *{
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    // .tokenomics__left
+
+    &__left {
+        & h2{
+            font-family: 'Stone Soup NF W01 Regular';
+            font-size: rem(48);
+            line-height: rem(46);
+            /* or 96% */
+            
+            letter-spacing: 0.05em;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width: rem(11.84);
+                height: rem(12.79);
+                background: url('../img/tokenomics/Vector.svg');
+                left: -10px;
+                top: -10px;
+            }
+        }
+    }
+
+    // .tokenomics__right
+
+    &__right {
+        width: rem(774);
+        display: flex;
+        flex-direction: column;
+        gap: rem(32);
+        @media (max-width: em(1125)){
+            width: 100%;
+        }
+        & p{
+
+        }
+        & ol{
+            counter-reset: count;
+            & li{
+                &:nth-child(2){
+                    margin: rem(16) 0;
+                }
+                list-style-type: none;
+                position: relative;
+                display: flex;
+                align-items: center;
+                font-size: rem(20);
+                line-height: rem(24);
+                gap: rem(5);
+                @media (max-width: em(1125)){
+                    width: 100%;
+                    text-align: left;
+                }
+                &::before{
+                    counter-increment: count;
+                    content: counter(count)" ";
+                    margin-right: 0.5em;
+                    color: #C2E978;
+                    background: rgba(194, 233, 120, 0.1);
+                    border-radius: 9px;
+                    font-size: rem(15);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: rem(13);
+                    text-align: center;
+                    height: 30px !important;
+                    width: 30px !important;
+                }
+
+                }
+            }
+        }
+    }
+

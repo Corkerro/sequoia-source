@@ -1,0 +1,93 @@
+.formula {
+    margin-top: rem(40);
+    position: relative;
+    // .formula__container
+
+    &__container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        gap: rem(35);
+        flex-wrap: wrap;
+        @media (max-width: em(845)){
+            flex-direction: column;
+            align-items: center;
+        }
+        & h3{
+            position: relative;
+            font-family: 'Stone Soup NF W01 Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 46px;
+            /* identical to box height, or 115% */
+            text-align: center;
+            letter-spacing: 0.05em;
+            @media (max-width: em(490)){
+                max-width: rem(370) !important;
+            }
+            color: #FFFFFF;
+            & span{
+                color: #C2E978;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    background: url('../img/formula/arrow.svg') no-repeat;
+                    background-size: cover;
+                    width: 34px;
+                    height: 38px;
+                    right: -59px;
+                    transform: rotate(-52deg);
+                    -webkit-transform: rotate(-52deg);
+                    -moz-transform: rotate(-52deg);
+                    -ms-transform: rotate(-52deg);
+                    -o-transform: rotate(-52deg);
+                    @media(max-width: em(845)){
+                        transform: rotate(0deg);
+                        transform: matrix(-1, 0, 0, 1, 0, 0);
+                        top: 25px;
+                        right: -29px;
+                        width: 55px;
+                        height: 62px;
+                        -webkit-transform: rotate(0deg);
+                        -moz-transform: rotate(0deg);
+                        -ms-transform: rotate(0deg);
+                        -o-transform: rotate(0deg);
+                        -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+                        -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+                        -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
+                        -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+                    @media (max-width: em(490)){
+                        top: 70px;
+                        right: -29px;
+                        width: 44.59px;
+                        height: 50.26px;
+                    
+                    }
+                }
+               
+            }
+        }
+    }
+
+    // .formula__formula
+
+    &__formula {
+        display: flex;
+        flex-direction: column;
+        gap: rem(2.8);
+        font-family: 'Stone Soup NF W01 Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 27.4709px;
+        line-height: 27px;
+        /* identical to box height */
+        max-width: rem(266);
+        letter-spacing: 0.05em;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+    }
+}

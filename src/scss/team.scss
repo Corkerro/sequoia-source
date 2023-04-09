@@ -1,0 +1,97 @@
+.team {
+    // .team__container
+
+    &__container {
+        overflow: hidden;
+    }
+
+    // .team__slider
+
+    &__slider {
+    }
+
+    // .team__wrapper
+
+    &__wrapper {
+        
+        margin-bottom: rem(24);
+    }
+
+    // .team__slide
+
+    &__slide {
+        & h5{
+            font-size: rem(32);
+            line-height: rem(28);
+            /* identical to box height, or 88% */
+            font-family: 'Stone Soup NF W01 Regular';
+            text-align: center;
+            letter-spacing: 0.02em;
+            
+            color: #FFFFFF;
+            margin-bottom: rem(12);
+        }
+        & p{
+            font-size: rem(15);
+            line-height: rem(24);
+            /* or 160% */
+            
+            text-align: center;
+            
+            color: #888D9D;
+        }
+
+    }
+}
+.swiper {
+
+    // .swiper__top
+
+    &__top {
+        
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        margin-bottom: rem(20);
+        & img{
+            position: absolute;
+            bottom: 0;
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none;   /* Chrome/Safari/Opera */
+            -khtml-user-select: none;    /* Konqueror */
+            -moz-user-select: none;      /* Firefox */
+            -ms-user-select: none;       /* Internet Explorer/Edge */
+            user-select: none;           /* Non-prefixed version, currently*/
+        }
+        &1{
+            background: linear-gradient(155.71deg, rgba(61, 221, 77, 0.12) 8.24%, rgba(61, 221, 77, 0.44) 97.81%);
+        }
+        &2{
+            background: linear-gradient(151.75deg, rgba(61, 221, 183, 0.13) 0.34%, rgba(61, 221, 183, 0.54) 90.04%);
+        }
+        &3{
+            background: linear-gradient(139.37deg, rgba(221, 61, 205, 0.11) 2.19%, rgba(221, 61, 205, 0.55) 92.59%);
+        }
+        &4{
+            background: linear-gradient(144.76deg, rgba(103, 61, 221, 0.23) 13.49%, rgba(103, 61, 221, 0.61) 90.58%);
+        }
+        &5{
+            background: linear-gradient(137.18deg, rgba(221, 148, 61, 0.2) 15.69%, rgba(221, 148, 61, 0.49) 88.05%);
+        }
+    }
+
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+    padding-top: rem(30);
+    margin: 0 auto;
+}
+.swiper-pagination {
+}

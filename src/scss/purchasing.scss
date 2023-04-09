@@ -1,0 +1,65 @@
+.purchasing {
+    position: relative;
+    margin-top: rem(48);
+    // .purchasing__container
+
+    &__container {
+        & h1{
+            position: relative;
+            font-family: 'Stone Soup NF W01 Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: rem(48);
+            line-height: rem(46);
+            /* identical to box height, or 96% */
+            
+            text-align: center;
+            letter-spacing: 0.05em;
+            margin-bottom: rem(24);
+            color: #FFFFFF;
+        }
+    }
+    &__star{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 17px;
+            height: 18px;
+            background: url('../img/purchasing/star.svg');
+            top: -18px;
+            left: -10px;
+        }
+    }
+    &__green{
+        color: #c2e978;
+    }
+
+    // .purchasing__blocks
+
+    &__blocks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: rem(10);
+    }
+
+    // .purchasing__blocks-block
+
+    &__blocks-block {
+        max-width: rem(369);
+        padding: rem(32) rem(24);
+        background: #191D2E;
+        gap: rem(12);
+        display: flex;
+        flex-direction: column;
+        & p{
+            min-height: 85px;
+        }
+        & img{
+            width: 56px;
+        }
+        height: 100%;
+    }
+}

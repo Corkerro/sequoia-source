@@ -1,0 +1,176 @@
+.subscribe {
+    margin-top: rem(26);
+    position: relative;
+    // .subscribe__container
+
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: rem(24);
+    }
+
+    // .subscribe__block
+
+    &__block {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: rem(20);
+        padding: rem(42) 0;
+        @include adaptiveValue("padding-right", 42, 12);
+        @include adaptiveValue("padding-left", 42, 12);
+        background: linear-gradient(180deg, #10121D 0%, #191D2E 100%);
+        @media (max-width: em(1060)){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    // .subscribe__block-del
+
+    &__block-del {
+        display: flex;
+        align-items: center;
+        gap: rem(10);
+        &-inner{
+            display: flex;
+            flex-direction: column;
+            gap: rem(2.8);
+            font-family: 'Stone Soup NF W01 Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 46px;
+            color: #FFFFFF;
+            /* identical to box height */
+            max-width: rem(362);
+            letter-spacing: 0.05em;
+            justify-content: center;
+            align-items: center;
+            @media (max-width: em(500)){
+                font-size: rem(28);
+            }
+            & span{
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: '*';
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-family: TTLakesNeue;
+                    width: 6px;
+                    height: 7px;
+                    top: -6px;
+                    color: #C2E978;
+                }
+            }
+            @media (max-width: em(645)){
+                & img{
+                    transform: scale(.9);
+                    -webkit-transform: scale(.9);
+                    -moz-transform: scale(.9);
+                    -ms-transform: scale(.9);
+                    -o-transform: scale(.9);
+}
+            }
+            @media (max-width: em(500)){
+                & img{
+                    width: 220px;
+                }
+            }
+        }
+    }
+
+    // .subscribe__block-eur
+
+    &__block-eur {
+        font-family: 'Stone Soup NF W01 Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 46px;
+        color: #FFFFFF;
+        & span{
+            color: #C2E978;
+        }
+    }
+
+    // .subscribe__block-eth
+
+    &__block-eth {
+        font-family: 'Stone Soup NF W01 Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 46px;
+        color: #C2E978;
+        @media (max-width: em(1060)){
+            margin-bottom: rem(30);
+        }
+    }
+
+    // .subscribe__block-btn
+
+    &__block-btn {
+        @media (max-width: em(420)){
+            width: 100%;
+            text-align: center;
+        }
+        display: inline-block;
+        padding: rem(34) rem(80);
+    }
+
+
+
+    &__information{
+        & ul{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: rem(10);
+            & li{
+                display: flex;
+                align-items: center;
+                gap: rem(12);
+                color: #B2B2B2;
+                & span{
+                    color: #C2E978;
+                    background: rgba(194, 233, 120, 0.1);
+                    border-radius: 9px;
+                    font-size: rem(24);
+                    padding: 8px 12px 2px;
+                }
+            }
+        }
+    }
+}
+.button {
+}
+
+.eq{
+    font-family: 'Stone Soup NF W01 Regular';
+    font-style: normal;
+
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    @media (min-width: em(781)){
+        display: none;
+    }
+}
+@media (max-width: em(1060)){
+    .subscribe__block-eur[data-aos][data-aos][data-aos-delay="450"].aos-animate{
+        transition-delay: 0.15s;
+    }
+    .subscribe__block-eth[data-aos][data-aos][data-aos-delay="850"].aos-animate{
+        transition-delay: 0.2s;
+    }
+    .subscribe__block-btn1[data-aos][data-aos][data-aos-delay="1250"].aos-animate{
+        transition-delay: 0.25s;
+    }
+
+}

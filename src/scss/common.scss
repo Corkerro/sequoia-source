@@ -1,0 +1,22 @@
+// Заголовки, общие БЄМ блоки и проче...
+p{
+    line-height: 28px;
+}
+.button{
+    background: #C2E978;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: rem(17);
+    line-height: rem(21);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #08162B;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    &:hover{
+        background: #fff;
+    }
+}

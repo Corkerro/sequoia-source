@@ -1,0 +1,56 @@
+.token {
+    margin-top: rem(48);
+    position: relative;
+    // .token__container
+    z-index: 2;
+    &__container {
+        & h1{
+            text-align: center;
+            font-family: 'Stone Soup NF W01 Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: rem(40);
+            line-height: rem(46);
+            /* identical to box height, or 115% */
+            
+            text-align: center;
+            letter-spacing: 0.05em;
+            
+            color: #FFFFFF;
+            
+        }
+    }
+
+    // .token__blocks
+
+    &__blocks {
+        margin-top: rem(24);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: rem(10);
+        flex-wrap: wrap;
+        
+        &-block {
+            max-width: rem(558);
+            padding: rem(32) rem(24);
+            background: #191D2E;
+            display: flex;
+            flex-direction: column;
+            gap: rem(4);
+            & h3{
+                font-family: 'Stone Soup NF W01 Regular';
+                font-style: normal;
+                font-weight: 400;
+                font-size: rem(32);
+                line-height: rem(40);
+                /* identical to box height, or 125% */
+                
+                letter-spacing: 0.05em;
+                
+                color: #C2E978;
+            }
+        }
+    }
+
+}
